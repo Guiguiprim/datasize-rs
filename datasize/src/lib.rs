@@ -205,6 +205,8 @@
 mod fake_clock;
 #[cfg(feature = "futures-types")]
 mod futures;
+#[cfg(feature = "prost-types")]
+mod prost_types;
 #[cfg(feature = "smallvec-types")]
 mod smallvec;
 #[cfg(feature = "std")]
