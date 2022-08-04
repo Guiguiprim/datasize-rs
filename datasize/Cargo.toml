@@ -16,6 +16,7 @@ futures-types = ["futures"]
 smallvec-types = ["smallvec", "std"]
 std = []
 tokio-types = ["tokio"]
+uuid-types = ["uuid"]
 time-types = ["time"]
 
 [dependencies]
@@ -24,8 +25,12 @@ fake_instant = { version = "0.4.0", optional = true }
 futures = { version = "0.3.5", optional = true }
 serde = { version = "1", optional = true, features = ["derive"] }
 smallvec = { version = "1.4.2", optional = true }
-tokio = { version = "0.2.22", default-features = false, optional = true, features = ["rt-core", "sync"] }
+tokio = { version = "0.2.22", default-features = false, optional = true, features = [
+  "rt-core",
+  "sync",
+] }
 time = { version = "0.3.12", optional = true }
+uuid = { version = "1.1.2", optional = true }
 
 [package.metadata.docs.rs]
 all-features = true
