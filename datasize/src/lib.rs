@@ -212,6 +212,8 @@ mod std;
 mod time;
 #[cfg(feature = "tokio-types")]
 mod tokio;
+#[cfg(feature = "uuid-types")]
+mod uuid;
 
 pub use datasize_derive::DataSize;
 
