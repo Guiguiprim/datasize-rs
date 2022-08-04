@@ -209,6 +209,8 @@ mod futures;
 mod smallvec;
 #[cfg(feature = "std")]
 mod std;
+#[cfg(feature = "time-types")]
+mod time;
 #[cfg(feature = "tokio-types")]
 mod tokio;
 
