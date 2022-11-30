@@ -198,7 +198,7 @@ where
     }
 }
 
-fn estimate_hashbrown_rawtable<T>(capacity: usize) -> usize {
+pub fn estimate_hashbrown_rawtable<T>(capacity: usize) -> usize {
     // https://github.com/rust-lang/hashbrown/blob/v0.12.3/src/raw/mod.rs#L185
     let buckets = if capacity < 8 {
         if capacity < 4 {

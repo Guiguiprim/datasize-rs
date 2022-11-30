@@ -220,6 +220,9 @@ mod uuid;
 
 pub use datasize_derive::DataSize;
 
+#[cfg(feature = "std")]
+pub use crate::std::estimate_hashbrown_rawtable;
+
 /// A `const fn` variant of the `min` function.
 pub const fn min(a: usize, b: usize) -> usize {
     [a, b][(a > b) as usize]
